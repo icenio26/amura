@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Añadir la línea Sitemap: https://TU-DOMINIO/sitemap.xml cuando el dominio esté registrado.

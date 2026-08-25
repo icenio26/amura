@@ -42,6 +42,13 @@ Por orden de impacto, según `docs/02-ux-arquitectura.md`:
    stock perfecto: nada de playas, maletas ni azafatas.
 4. **Seguro de responsabilidad civil y acreditación IATA o consolidador emisor**, cuando existan.
 
+## SEO técnico, cuando haya dominio
+
+- Añadir `Sitemap: https://TU-DOMINIO/sitemap.xml` a `robots.txt` y crear el `sitemap.xml`.
+- Añadir `<link rel="canonical">` con la URL definitiva en `index.html`.
+- Completar `og:url` y `og:image` (una imagen 1200×630 propia, de muelle o fondeadero).
+- Dar de alta la ficha de Google Business Profile en Algeciras y Palmones.
+
 ## Revisión periódica
 
 - Cifras del puerto: se actualizan cada enero-febrero. Ver `docs/datos-puerto-verificados.md`.

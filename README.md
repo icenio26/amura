@@ -50,7 +50,19 @@ dominio y correo, datos registrales del pie de página, textos legales y conecta
 npx http-server -p 8080 .   # o: python3 -m http.server 8080
 ```
 
-## Despliegue
+## Despliegue en Vercel
 
-Cloudflare Pages (recomendado) o GitHub Pages, ambos gratuitos y sin build.
-Los pasos exactos y la comparativa completa del stack están en `docs/stack-tecnologico.md`.
+El repositorio ya está configurado (`vercel.json`). No hay build: Vercel sirve los archivos tal cual.
+
+1. Entrar en [vercel.com/new](https://vercel.com/new) con la cuenta de GitHub.
+2. **Import** sobre el repositorio `icenio26/amura`.
+3. Framework Preset: **Other**. Build Command: vacío. Output Directory: vacío (raíz).
+4. Deploy. Queda publicado en `amura-*.vercel.app` en menos de un minuto.
+5. Cada `git push` a la rama de producción vuelve a desplegar automáticamente, y cada rama
+   genera su propia URL de previsualización.
+
+Para el dominio propio: **Project → Settings → Domains → Add**, y apuntar los DNS del
+registrador a Vercel. El certificado HTTPS se emite solo.
+
+Alternativas equivalentes y también gratuitas: Cloudflare Pages o GitHub Pages.
+La comparativa completa del stack está en `docs/stack-tecnologico.md`.
