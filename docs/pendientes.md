@@ -23,6 +23,13 @@
 4. Crear una página de gracias que **repita el teléfono de guardia**, y apuntar a ella con
    `<input type="hidden" name="redirect" value="https://…/gracias.html">`.
 
+## Área de cliente
+
+Es una maqueta. Antes de convertirla en producto, leer `docs/area-cliente.md`: autenticación
+gestionada, comprobación de rol **en servidor**, almacenamiento privado de documentos con URL
+firmada, y el trabajo de protección de datos. Y valorar antes si una plataforma existente de
+gestión de viajes ya lo cubre, porque probablemente salga más barato que construirlo.
+
 ## Marca
 
 - Verificar disponibilidad de **Amura** en EUIPO, clases 39 (viajes) y 41 (eventos y formación).

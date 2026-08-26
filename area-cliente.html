@@ -1,0 +1,351 @@
+<!-- ARCHIVO GENERADO por tools/build.py. No editar a mano:
+     los cambios se pierden en el siguiente build. Edita src/area-cliente.html -->
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área de cliente · Amura</title>
+<meta name="description" content="Área de cliente de Amura: perfil y preferencias de viaje, documentación de cada viaje sin importes, y facturas del servicio para los perfiles de administración.">
+<meta name="theme-color" content="#0B0F0E">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/area.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M3 7 L24 16' stroke='%23E8EDEA' stroke-width='3' fill='none'/%3E%3Cpath d='M3 25 L24 16' stroke='%2393A19D' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='28' cy='16' r='2.6' fill='%2317C37B'/%3E%3C/svg%3E">
+</head>
+<body data-page="area">
+
+<a class="skip-link" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M3 7 L24 16" stroke="currentColor" stroke-width="3" fill="none"/>
+        <path d="M3 25 L24 16" stroke="currentColor" stroke-width="1.5" opacity=".45" fill="none"/>
+        <circle cx="28" cy="16" r="2.6" fill="var(--green)"/>
+      </svg>
+      <span class="brand__name">Amura</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a href="viajes-tecnicos.html" data-nav="tecnicos" data-es="Viajes técnicos" data-en="Technical travel">Viajes técnicos</a>
+      <a href="viajes-comerciales.html" data-nav="comerciales" data-es="Viajes comerciales" data-en="Business travel">Viajes comerciales</a>
+      <a href="index.html#proceso" data-es="Cómo trabajamos" data-en="How we work">Cómo trabajamos</a>
+      <a href="index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="header__phone" href="tel:+34600000000" data-es-al="Teléfono de guardia 24 horas" data-en-al="24-hour duty phone" aria-label="Teléfono de guardia 24 horas">
+        <span class="dot" aria-hidden="true"></span>+34 6XX XXX XXX
+      </a>
+      <a class="btn btn--ghost btn--sm header__area" href="area-cliente.html" data-nav="area" data-es="Área de cliente" data-en="Client area">Área de cliente</a>
+      <a class="btn btn--primary btn--sm header__quote" href="index.html#contacto" data-es="Presupuesto" data-en="Get a quote">Presupuesto</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ ACCESO ============ -->
+<section class="section section--plain" id="viewLogin">
+  <div class="wrap login">
+    <div class="login__card">
+      <p class="label" data-es="Área de cliente" data-en="Client area">Área de cliente</p>
+      <h1 data-es="Entra a tus viajes" data-en="Sign in to your trips">Entra a tus viajes</h1>
+      <p class="login__lead"
+         data-es="Tus preferencias guardadas, la documentación de cada viaje y, si llevas la administración de la cuenta, las facturas del servicio."
+         data-en="Your saved preferences, the documents for every trip and, if you manage the account, the service invoices.">Tus preferencias guardadas, la documentación de cada viaje y, si llevas la administración de la cuenta, las facturas del servicio.</p>
+
+      <form class="form" id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginMail" data-es="Email corporativo" data-en="Work email">Email corporativo</label>
+          <input id="loginMail" name="email" type="email" autocomplete="username" placeholder="marta.gil@ejemplo.com">
+        </div>
+        <div class="field">
+          <label for="loginPass" data-es="Contraseña" data-en="Password">Contraseña</label>
+          <input id="loginPass" name="password" type="password" autocomplete="current-password" placeholder="••••••••">
+        </div>
+        <div>
+          <button class="btn btn--primary" type="submit" data-es="Entrar" data-en="Sign in">Entrar</button>
+        </div>
+        <p class="form__note" id="loginStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="demo-box">
+        <p class="demo-box__title">
+          <span class="dot dot--amber" aria-hidden="true"></span>
+          <span data-es="Demostración" data-en="Demo">Demostración</span>
+        </p>
+        <p data-es="Esto es una maqueta funcional. No hay servidor detrás: los datos son ficticios, no se envía nada y las preferencias que guardes se quedan solo en este navegador. Entra con uno de los dos perfiles para ver la diferencia."
+           data-en="This is a working mock-up. There is no server behind it: the data is fictional, nothing is sent anywhere, and any preferences you save stay only in this browser. Sign in with one of the two profiles to see the difference.">Esto es una maqueta funcional. No hay servidor detrás: los datos son ficticios, no se envía nada y las preferencias que guardes se quedan solo en este navegador. Entra con uno de los dos perfiles para ver la diferencia.</p>
+        <div class="demo-box__actions">
+          <button type="button" class="btn btn--ghost btn--sm" data-demo-login="viajero" data-es="Entrar como viajero" data-en="Sign in as traveller">Entrar como viajero</button>
+          <button type="button" class="btn btn--ghost btn--sm" data-demo-login="admin" data-es="Entrar como administración" data-en="Sign in as account admin">Entrar como administración</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PANEL ============ -->
+<section class="section section--plain" id="viewApp" hidden>
+  <div class="wrap">
+
+    <p class="demo-strip">
+      <span class="dot dot--amber" aria-hidden="true"></span>
+      <span data-es="Demostración · datos ficticios · sin servidor · nada sale de este navegador"
+            data-en="Demo · fictional data · no server · nothing leaves this browser">Demostración · datos ficticios · sin servidor · nada sale de este navegador</span>
+    </p>
+
+    <header class="userbar">
+      <span class="userbar__avatar" id="userInitials" aria-hidden="true">MG</span>
+      <span class="userbar__id">
+        <strong id="userName">Marta Gil</strong>
+        <span id="userRoleLine">Técnica de electrónica naval · Empresa Ejemplo, S.L.</span>
+      </span>
+      <span class="chip" id="userChip" data-es="Viajero" data-en="Traveller">Viajero</span>
+      <button type="button" class="btn btn--ghost btn--sm" id="logout" data-es="Salir" data-en="Sign out">Salir</button>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Secciones del área de cliente">
+      <button role="tab" id="tabTrips" aria-controls="panelTrips" aria-selected="true"
+              data-es="Mis viajes" data-en="My trips">Mis viajes</button>
+      <button role="tab" id="tabPrefs" aria-controls="panelPrefs" aria-selected="false" tabindex="-1"
+              data-es="Perfil y preferencias" data-en="Profile and preferences">Perfil y preferencias</button>
+      <button role="tab" id="tabBills" aria-controls="panelBills" aria-selected="false" tabindex="-1" hidden
+              data-es="Facturas" data-en="Invoices">Facturas</button>
+    </div>
+
+    <!-- --- Viajes --- -->
+    <div role="tabpanel" id="panelTrips" aria-labelledby="tabTrips" tabindex="0">
+      <p class="panel-intro" id="tripsIntro"
+         data-es="Toda la documentación de tus viajes, sin importes. Los precios y las facturas viven en la pestaña de administración de la cuenta."
+         data-en="All your trip documents, with no amounts. Prices and invoices live in the account admin tab.">Toda la documentación de tus viajes, sin importes. Los precios y las facturas viven en la pestaña de administración de la cuenta.</p>
+      <div id="tripsList"></div>
+    </div>
+
+    <!-- --- Perfil y preferencias --- -->
+    <div role="tabpanel" id="panelPrefs" aria-labelledby="tabPrefs" tabindex="0" hidden>
+      <p class="panel-intro"
+         data-es="Lo que guardes aquí no volvemos a preguntártelo. Se aplica por defecto a cada reserva que hacemos a tu nombre."
+         data-en="Whatever you save here, we will not ask you again. It applies by default to every booking we make in your name.">Lo que guardes aquí no volvemos a preguntártelo. Se aplica por defecto a cada reserva que hacemos a tu nombre.</p>
+
+      <form class="form prefs" id="prefsForm" novalidate>
+        <fieldset class="prefs__group">
+          <legend data-es="Perfil" data-en="Profile">Perfil</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfRole" data-es="Puesto en la empresa" data-en="Role in the company">Puesto en la empresa</label>
+              <input id="pfRole" name="puesto" type="text" placeholder="Técnica de electrónica naval">
+            </div>
+            <div class="field">
+              <label for="pfPhone" data-es="Móvil de contacto" data-en="Contact mobile">Móvil de contacto
+                <span class="hint" data-es="Para avisarte si algo cambia en ruta." data-en="So we can reach you if something changes en route.">Para avisarte si algo cambia en ruta.</span>
+              </label>
+              <input id="pfPhone" name="movil" type="tel" inputmode="tel" placeholder="+34 ...">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="prefs__group">
+          <legend data-es="Vuelo" data-en="Flight">Vuelo</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfSeat" data-es="Asiento" data-en="Seat">Asiento</label>
+              <select id="pfSeat" name="asiento">
+                <option value="ventana" data-es="Ventana" data-en="Window">Ventana</option>
+                <option value="pasillo" data-es="Pasillo" data-en="Aisle">Pasillo</option>
+                <option value="indiferente" data-es="Indiferente" data-en="No preference">Indiferente</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pfMeal" data-es="Comida especial" data-en="Special meal">Comida especial</label>
+              <select id="pfMeal" name="comida">
+                <option value="ninguna" data-es="Ninguna" data-en="None">Ninguna</option>
+                <option value="vegetariana" data-es="Vegetariana" data-en="Vegetarian">Vegetariana</option>
+                <option value="sin-gluten" data-es="Sin gluten" data-en="Gluten free">Sin gluten</option>
+                <option value="halal" data-es="Halal" data-en="Halal">Halal</option>
+                <option value="sin-lactosa" data-es="Sin lactosa" data-en="Lactose free">Sin lactosa</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfBag" data-es="Equipaje" data-en="Baggage">Equipaje</label>
+              <select id="pfBag" name="equipaje">
+                <option value="cabina" data-es="Solo cabina" data-en="Cabin only">Solo cabina</option>
+                <option value="facturado" data-es="Facturado" data-en="Checked">Facturado</option>
+                <option value="instrumental" data-es="Facturado + instrumental" data-en="Checked + instruments">Facturado + instrumental</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pfLoyalty" data-es="Programa de fidelización" data-en="Frequent flyer programme">Programa de fidelización</label>
+              <input id="pfLoyalty" name="fidelizacion" type="text" placeholder="IB Plus · BA1234567">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="prefs__group">
+          <legend data-es="Hotel" data-en="Hotel">Hotel</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfBed" data-es="Cama" data-en="Bed">Cama</label>
+              <select id="pfBed" name="cama">
+                <option value="doble" data-es="Doble" data-en="Double">Doble</option>
+                <option value="individual" data-es="Individual" data-en="Single">Individual</option>
+                <option value="indiferente" data-es="Indiferente" data-en="No preference">Indiferente</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pfFloor" data-es="Planta" data-en="Floor">Planta</label>
+              <select id="pfFloor" name="planta">
+                <option value="alta" data-es="Alta" data-en="High">Alta</option>
+                <option value="baja" data-es="Baja" data-en="Low">Baja</option>
+                <option value="indiferente" data-es="Indiferente" data-en="No preference">Indiferente</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pfNotes" data-es="Notas para la reserva" data-en="Notes for the booking">Notas para la reserva</label>
+            <textarea id="pfNotes" name="notas" placeholder="Habitación silenciosa. Salida tardía si el buque se retrasa."
+                      data-es-ph="Habitación silenciosa. Salida tardía si el buque se retrasa."
+                      data-en-ph="Quiet room. Late check-out if the vessel is delayed."></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="prefs__group">
+          <legend data-es="Documento de viaje" data-en="Travel document">Documento de viaje</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfDoc" data-es="Tipo" data-en="Type">Tipo</label>
+              <select id="pfDoc" name="documento">
+                <option value="dni" data-es="DNI" data-en="National ID">DNI</option>
+                <option value="pasaporte" data-es="Pasaporte" data-en="Passport">Pasaporte</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pfDocExp" data-es="Caducidad" data-en="Expiry">Caducidad
+                <span class="hint" data-es="Para avisarte antes de que caduque." data-en="So we can warn you before it expires.">Para avisarte antes de que caduque.</span>
+              </label>
+              <input id="pfDocExp" name="caducidad" type="month">
+            </div>
+          </div>
+          <p class="prefs__privacy"
+             data-es="Aquí no se guarda el número completo del documento. Cuando hace falta para emitir, se pide en el momento y no queda almacenado en el área de cliente."
+             data-en="The full document number is not stored here. When it is needed to issue a ticket we ask for it at that moment, and it is not kept in the client area.">Aquí no se guarda el número completo del documento. Cuando hace falta para emitir, se pide en el momento y no queda almacenado en el área de cliente.</p>
+        </fieldset>
+
+        <div class="prefs__save">
+          <button class="btn btn--primary" type="submit" data-es="Guardar preferencias" data-en="Save preferences">Guardar preferencias</button>
+          <span class="form__note" id="prefsStatus" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- --- Facturas --- -->
+    <div role="tabpanel" id="panelBills" aria-labelledby="tabBills" tabindex="0" hidden>
+      <p class="panel-intro"
+         data-es="Solo visible para los perfiles de administración de la cuenta. Los viajeros ven su documentación sin ningún importe."
+         data-en="Only visible to account admin profiles. Travellers see their documents with no amounts at all.">Solo visible para los perfiles de administración de la cuenta. Los viajeros ven su documentación sin ningún importe.</p>
+      <div class="table-scroll">
+        <table class="bills">
+          <thead>
+            <tr>
+              <th scope="col" data-es="Factura" data-en="Invoice">Factura</th>
+              <th scope="col" data-es="Concepto" data-en="Concept">Concepto</th>
+              <th scope="col" data-es="Fecha" data-en="Date">Fecha</th>
+              <th scope="col" class="num" data-es="Proveedores" data-en="Suppliers">Proveedores</th>
+              <th scope="col" class="num" data-es="Gestión" data-en="Handling">Gestión</th>
+              <th scope="col" class="num" data-es="Total" data-en="Total">Total</th>
+              <th scope="col" data-es="Estado" data-en="Status">Estado</th>
+              <th scope="col"><span class="sr-only" data-es="Descargar" data-en="Download">Descargar</span></th>
+            </tr>
+          </thead>
+          <tbody id="billsBody"></tbody>
+        </table>
+      </div>
+      <p class="panel-note"
+         data-es="El coste de gestión va siempre desglosado y separado del coste del proveedor. Reprogramar un viaje no genera línea de gestión."
+         data-en="Our handling fee is always itemised separately from supplier cost. Rebuilding a trip generates no handling line.">El coste de gestión va siempre desglosado y separado del coste del proveedor. Reprogramar un viaje no genera línea de gestión.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Visor de documento -->
+<div class="docviewer" id="docViewer" hidden>
+  <div class="docviewer__backdrop" data-close-doc></div>
+  <div class="docviewer__panel" role="dialog" aria-modal="true" aria-labelledby="docTitle">
+    <header class="docviewer__head">
+      <h2 id="docTitle">—</h2>
+      <button type="button" class="docviewer__close" id="docClose" data-es-al="Cerrar" data-en-al="Close" aria-label="Cerrar">&times;</button>
+    </header>
+    <div class="docviewer__body" id="docBody"></div>
+    <footer class="docviewer__foot">
+      <span data-es="Documento de ejemplo. Sin importes: los precios están en la factura del servicio."
+            data-en="Sample document. No amounts: prices live on the service invoice.">Documento de ejemplo. Sin importes: los precios están en la factura del servicio.</span>
+    </footer>
+  </div>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__tagline" data-es="A bordo a tiempo." data-en="On board, on time.">A bordo a tiempo.</p>
+        <p style="color:var(--ink-2);font-size:.9rem;max-width:34ch"
+           data-es="Amura · Marine Travel &amp; Events. Viajes de empresa para el sector marítimo, desde la Bahía de Algeciras."
+           data-en="Amura · Marine Travel &amp; Events. Corporate travel for the maritime sector, from the Bay of Algeciras.">Amura · Marine Travel &amp; Events. Viajes de empresa para el sector marítimo, desde la Bahía de Algeciras.</p>
+      </div>
+      <div>
+        <h4 data-es="Servicio" data-en="Service">Servicio</h4>
+        <ul>
+          <li><a href="viajes-tecnicos.html" data-es="Viajes técnicos y de tripulación" data-en="Technical and crew travel">Viajes técnicos y de tripulación</a></li>
+          <li><a href="viajes-comerciales.html" data-es="Viajes comerciales y ferias" data-en="Business travel and trade fairs">Viajes comerciales y ferias</a></li>
+          <li><a href="area-cliente.html" data-es="Área de cliente" data-en="Client area">Área de cliente</a></li>
+          <li><a class="mono" href="tel:+34600000000">+34 6XX XXX XXX</a></li>
+          <li><a class="mono" href="mailto:reservas@amura.es">reservas@amura.es</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-es="Legal" data-en="Legal">Legal</h4>
+        <ul>
+          <li><a href="#" data-es="Aviso legal" data-en="Legal notice">Aviso legal</a></li>
+          <li><a href="#" data-es="Política de privacidad" data-en="Privacy policy">Política de privacidad</a></li>
+          <li><a href="#" data-es="Política de cookies" data-en="Cookie policy">Política de cookies</a></li>
+          <li><a href="#" data-es="Condiciones de contratación" data-en="Terms of service">Condiciones de contratación</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__legal">
+      <span data-es="Denominación social pendiente de alta" data-en="Company name pending registration">Denominación social pendiente de alta</span>
+      <span>·</span>
+      <span data-es="CIF pendiente" data-en="Tax ID pending">CIF pendiente</span>
+      <span>·</span>
+      <span data-es="Registro de agencia de viajes (Junta de Andalucía) pendiente" data-en="Travel agency licence (Junta de Andalucía) pending">Registro de agencia de viajes (Junta de Andalucía) pendiente</span>
+      <span>·</span>
+      <span>© <span id="year">2026</span> Amura</span>
+    </p>
+  </div>
+</footer>
+
+<nav class="dockbar" aria-label="Contacto rápido">
+  <a href="tel:+34600000000" class="is-primary"><span data-es="Llamar" data-en="Call">Llamar</span></a>
+  <a href="index.html#contacto"><span data-es="Escribir" data-en="Write">Escribir</span></a>
+</nav>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/area.js"></script>
+</body>
+</html>

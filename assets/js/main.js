@@ -45,6 +45,10 @@
     return document.documentElement.getAttribute('data-lang') === 'en' ? 'en' : 'es';
   }
 
+  /* El área de cliente pinta contenido después de esta pasada: necesita
+     poder volver a traducir lo que inserta. */
+  window.Amura = { applyLang: applyLang, currentLang: currentLang };
+
   var initial = storedLang();
   if (initial !== 'es' && initial !== 'en') {
     initial = (navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';

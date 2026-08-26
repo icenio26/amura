@@ -22,6 +22,18 @@ La web lo dice de forma explícita en una pregunta frecuente, en lugar de dejarl
 consignataria, que es quien ya tiene esa relación.»* Decirlo abiertamente construye más
 credibilidad que insinuar una capacidad que no existe.
 
+## Estructura de la web
+
+Cada público tiene su propia página, porque se les vende con argumentos distintos y se les manda
+un enlace distinto:
+
+| Página | Para quién | Argumento |
+|---|---|---|
+| `index.html` | Ambos | El viaje se rehace cuando el plan cambia |
+| `viajes-tecnicos.html` | Operaciones, servicio técnico, crewing | La ventana de escala manda |
+| `viajes-comerciales.html` | Dirección y comercial | Varias personas, un presupuesto, una factura |
+| `area-cliente.html` | Clientes con cuenta abierta | Preferencias, documentos y facturas |
+
 ## Los dos públicos
 
 1. **Quien va al barco** — técnicos, superintendentes, surveyors, inspectores y tripulación.

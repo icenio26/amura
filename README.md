@@ -12,11 +12,28 @@ El detalle y las fases están en `docs/alcance-y-fases.md`.
 Sitio estático: HTML, CSS y JavaScript sin dependencias ni build. Se despliega tal cual.
 
 ```
-index.html              La web completa (una sola página, bilingüe ES/EN)
+src/                    Fuentes de las páginas. Aquí se edita.
+  partials/             Cabecera y pie compartidos
+  index.html            Home
+  viajes-tecnicos.html  Técnicos, inspectores y tripulación
+  viajes-comerciales.html  Ferias, misiones comerciales y visitas
+  area-cliente.html     Área de cliente (demostración)
+tools/build.py          Ensambla src/ → páginas de la raíz
+*.html                  GENERADAS. No editar a mano.
 assets/css/styles.css   Sistema visual "noche de terminal"
+assets/css/area.css     Estilos del área de cliente
 assets/js/main.js       Idioma, consola de escala, revelado, formulario
-docs/                   Trabajo de marca, UX, marketing y decisiones técnicas
+assets/js/area.js       Área de cliente (datos de ejemplo, roles, preferencias)
+docs/                   Marca, UX, marketing, alcance y decisiones técnicas
 ```
+
+**Las páginas de la raíz están generadas.** Tras editar cualquier cosa en `src/`:
+
+```bash
+python3 tools/build.py
+```
+
+El despliegue no necesita ese paso: la salida está versionada y Vercel la sirve tal cual.
 
 ---
 
@@ -38,14 +55,16 @@ depende de él.
 0. **El alcance manda sobre los informes.** `docs/alcance-y-fases.md` es la referencia; los
    informes `01`–`03` se escribieron para un alcance más amplio y se conservan como registro.
 
-1. **Nada que no sea cierto hoy.** La empresa acaba de arrancar: la web no muestra logos de
+1. **El área de cliente es una maqueta y lo dice.** Sin servidor, con datos ficticios y avisos en
+   tres sitios. Un acceso real necesita backend: ver `docs/area-cliente.md`.
+2. **Nada que no sea cierto hoy.** La empresa acaba de arrancar: la web no muestra logos de
    clientes, testimonios, años de experiencia ni volúmenes. En su lugar publica compromisos
    medibles. Los clientes potenciales identificados están en `docs/pipeline-comercial.md`, que es
    material interno y no se publica.
-2. **El ejemplo del hero está etiquetado como ejemplo.** La consola de escala anima un caso real
+3. **El ejemplo del hero está etiquetado como ejemplo.** La consola de escala anima un caso real
    de negocio —un ETA que se retrasa catorce horas y un plan que se rehace— con un buque
    inventado y la etiqueta «Ejemplo» visible.
-3. **Sólo datos del puerto verificados**, con fuente y año, recogidos en
+4. **Sólo datos del puerto verificados**, con fuente y año, recogidos en
    `docs/datos-puerto-verificados.md`. Las distancias por carretera van marcadas con ≈.
 
 ## Antes de publicar

@@ -1,0 +1,210 @@
+/* =============================================================
+   AMURA · Área de cliente
+   Hereda los tokens de styles.css. Aquí la retórica cambia: esto
+   no se lee, se opera. Más densidad, estado visible y datos en
+   monoespaciada.
+   ============================================================= */
+
+/* `hidden` tiene que ganar a cualquier display que declaremos abajo. */
+[hidden] { display: none !important; }
+
+/* ---------- Acceso ---------- */
+.login { display: grid; justify-content: center; }
+.login__card { width: min(100%, 32rem); }
+.login__card h1 { font-size: clamp(1.7rem, 3.4vw, 2.2rem); margin: .6rem 0 .8rem; }
+.login__lead { color: var(--ink-2); margin-bottom: 2rem; }
+.login .form { gap: 1.1rem; }
+
+.demo-box {
+  margin-top: 2.25rem; padding: 1.25rem 1.35rem;
+  border: 1px solid var(--line); border-left: 2px solid var(--amber);
+  background: var(--surface); border-radius: var(--radius);
+}
+.demo-box__title {
+  display: flex; align-items: center; gap: .55rem; margin-bottom: .6rem;
+  font-family: var(--font-mono); font-size: var(--fs-label);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--amber);
+}
+.demo-box p { font-size: .88rem; color: var(--ink-2); }
+.demo-box__actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+
+.demo-strip {
+  display: flex; align-items: center; gap: .6rem; margin-bottom: 1.75rem;
+  padding: .6rem .9rem; border: 1px dashed var(--amber); border-radius: var(--radius);
+  font-family: var(--font-mono); font-size: .74rem; letter-spacing: .06em;
+  color: var(--amber);
+}
+
+/* ---------- Barra de usuario ---------- */
+.userbar {
+  display: flex; align-items: center; gap: .9rem; flex-wrap: wrap;
+  padding-bottom: 1.4rem; border-bottom: 1px solid var(--line);
+}
+.userbar__avatar {
+  width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center;
+  border-radius: 50%; background: var(--surface-2); border: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: .82rem; letter-spacing: .04em; color: var(--ink);
+}
+.userbar__id { display: flex; flex-direction: column; margin-right: auto; min-width: 0; }
+.userbar__id strong { font-family: var(--font-display); font-size: 1.08rem; letter-spacing: -.01em; }
+.userbar__id span { font-size: .85rem; color: var(--ink-3); }
+
+.chip {
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+  padding: .3rem .6rem; border-radius: 2px;
+  background: var(--green-dim); color: var(--green); border: 1px solid transparent;
+}
+.chip--admin { background: var(--amber-dim); color: var(--amber); }
+
+/* ---------- Pestañas ---------- */
+.tabs {
+  display: flex; gap: .25rem; margin: 1.75rem 0 1.5rem;
+  border-bottom: 1px solid var(--line); overflow-x: auto;
+}
+.tabs button {
+  flex: 0 0 auto; background: none; border: 0; cursor: pointer;
+  padding: .75rem .95rem; margin-bottom: -1px;
+  font-family: var(--font-body); font-size: .93rem; font-weight: 600;
+  color: var(--ink-3); border-bottom: 2px solid transparent;
+  transition: color .16s ease, border-color .16s ease;
+}
+.tabs button:hover { color: var(--ink-2); }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--green); }
+
+.panel-intro { color: var(--ink-2); font-size: .93rem; max-width: 68ch; margin-bottom: 1.75rem; }
+.panel-note { margin-top: 1.25rem; font-size: .82rem; color: var(--ink-3); max-width: 68ch; }
+
+/* ---------- Viajes ---------- */
+.trip {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); margin-bottom: 1.1rem; overflow: hidden;
+}
+.trip__head {
+  display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap;
+  padding: 1.15rem 1.3rem; background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+.trip__title { margin-right: auto; min-width: 0; }
+.trip__title strong { display: block; font-family: var(--font-display); font-size: 1.05rem; letter-spacing: -.01em; }
+.trip__title span { font-size: .85rem; color: var(--ink-3); }
+.trip__dates {
+  font-family: var(--font-mono); font-size: .8rem; color: var(--ink-2);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.trip__traveller {
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+
+.docs { list-style: none; margin: 0; padding: 0; }
+.doc {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: .85rem 1.3rem;
+}
+.doc + .doc { border-top: 1px solid var(--line-soft); }
+.doc__icon {
+  width: 30px; height: 30px; flex: 0 0 auto; display: grid; place-items: center;
+  border: 1px solid var(--line); border-radius: 2px;
+  font-family: var(--font-mono); font-size: .58rem; letter-spacing: .04em; color: var(--ink-3);
+}
+.doc__id { margin-right: auto; min-width: 0; }
+.doc__id strong { display: block; font-size: .93rem; font-weight: 600; }
+.doc__id span {
+  font-family: var(--font-mono); font-size: .74rem; color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Preferencias ---------- */
+.prefs { gap: 1.75rem; }
+.prefs__group { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.35rem 1.4rem; margin: 0; }
+.prefs__group legend {
+  padding: 0 .5rem; font-family: var(--font-mono); font-size: var(--fs-label);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3);
+}
+.prefs__group .field-row + .field-row,
+.prefs__group .field-row + .field { margin-top: 1.15rem; }
+.prefs__privacy {
+  margin-top: 1.1rem; padding-top: .9rem; border-top: 1px solid var(--line-soft);
+  font-size: .8rem; color: var(--ink-3);
+}
+.prefs__save { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.field select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-3) 50%),
+                    linear-gradient(135deg, var(--ink-3) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 2.25rem;
+}
+
+/* ---------- Facturas ---------- */
+.table-scroll { position: relative; overflow-x: auto; }
+.bills { width: 100%; border-collapse: collapse; min-width: 720px; }
+.bills th {
+  text-align: left; padding: .7rem .85rem; border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: var(--fs-label); font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3);
+}
+.bills td { padding: .85rem; border-bottom: 1px solid var(--line-soft); font-size: .9rem; }
+.bills .num { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.bills tbody tr:hover { background: var(--surface); }
+.bills .ref { font-family: var(--font-mono); font-size: .82rem; }
+.bills .total { font-weight: 600; }
+
+/* ---------- Visor de documento ---------- */
+.docviewer { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 1rem; }
+.docviewer__backdrop { position: absolute; inset: 0; background: rgba(4, 8, 7, .72); }
+.docviewer__panel {
+  position: relative; width: min(100%, 34rem); max-height: 90vh; overflow: auto;
+  background: var(--ground); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.docviewer__head {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); background: var(--surface-2);
+  position: sticky; top: 0;
+}
+.docviewer__head h2 { font-size: 1.02rem; margin-right: auto; }
+.docviewer__close {
+  background: none; border: 1px solid var(--line); border-radius: 2px; cursor: pointer;
+  color: var(--ink-2); width: 34px; height: 34px; font-size: 1.2rem; line-height: 1;
+}
+.docviewer__close:hover { color: var(--ink); border-color: var(--ink-3); }
+.docviewer__body { padding: 1.25rem; }
+.docviewer__foot {
+  padding: .8rem 1.25rem; border-top: 1px solid var(--line);
+  background: var(--surface); font-size: .78rem; color: var(--ink-3);
+}
+
+/* La hoja del documento: se lee como un impreso, no como una tarjeta web */
+.sheet { position: relative; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.sheet__band {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .7rem 1rem; background: var(--surface-2); border-bottom: 1px dashed var(--line);
+  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+.sheet__band em { font-style: normal; color: var(--amber); }
+.sheet__rows { margin: 0; padding: .3rem 0; }
+.sheet__row { display: grid; grid-template-columns: 108px 1fr; gap: .8rem; padding: .55rem 1rem; }
+.sheet__row + .sheet__row { border-top: 1px solid var(--line-soft); }
+.sheet__row dt {
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.sheet__row dd {
+  margin: 0; font-family: var(--font-mono); font-size: .88rem; color: var(--ink);
+  font-variant-numeric: tabular-nums; overflow-wrap: anywhere;
+}
+.sheet__row dd small { display: block; font-family: var(--font-body); font-size: .76rem; color: var(--ink-3); }
+.sheet__noprice {
+  padding: .7rem 1rem; border-top: 1px dashed var(--line);
+  background: var(--green-dim); color: var(--green);
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em;
+}
+
+@media (max-width: 560px) {
+  .sheet__row { grid-template-columns: 1fr; gap: .15rem; }
+  .doc { align-items: flex-start; }
+}
