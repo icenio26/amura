@@ -97,21 +97,21 @@
   var timers = [];
 
   function frameStart() {
-    setStatus('ok', 'Plan confirmado', 'Plan confirmed');
+    setStatus('ok', 'Viaje confirmado', 'Trip confirmed');
     setCell('cellEta', '04:20 UTC', '04:20 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 21:55', 'HAM → AGP · 21:55', false);
     setCell('cellHotel', 'Palmones · 1 noche', 'Palmones · 1 night', false);
-    setCell('cellLaunch', '03:10 UTC', '03:10 UTC', false);
+    setCell('cellTransfer', 'AGP → Algeciras · 02:00', 'AGP → Algeciras · 02:00', false);
     setLog('Técnico de electrónica · 1 persona', 'Electronics engineer · 1 person');
   }
 
   function frameEnd() {
-    setStatus('ok', 'Plan actualizado · 00:12', 'Plan updated · 00:12');
+    setStatus('ok', 'Viaje rehecho · 00:12', 'Trip rebuilt · 00:12');
     setCell('cellEta', '<s>04:20</s> 18:40 UTC', '<s>04:20</s> 18:40 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 11:20', 'HAM → AGP · 11:20', false);
     setCell('cellHotel', 'Palmones · 2 noches', 'Palmones · 2 nights', false);
-    setCell('cellLaunch', '17:30 UTC', '17:30 UTC', false);
-    setLog('Replanificado sin coste de gestión', 'Re-planned at no handling cost');
+    setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', false);
+    setLog('Rehecho sin coste de gestión', 'Rebuilt at no handling cost');
   }
 
   function play() {
@@ -123,9 +123,9 @@
     frameStart();
 
     timers.push(setTimeout(function () {
-      setStatus('warn', 'ETA revisado · +14 h', 'ETA revised · +14 h');
+      setStatus('warn', 'El buque retrasa · +14 h', 'Vessel delayed · +14 h');
       setCell('cellEta', '<s>04:20</s> 18:40 UTC', '<s>04:20</s> 18:40 UTC', true);
-      setLog('El buque retrasa la escala', 'The vessel pushes the call back');
+      setLog('Nuevo ETA recibido', 'New ETA received');
     }, 2600));
 
     timers.push(setTimeout(function () {
@@ -139,8 +139,8 @@
     }, 5300));
 
     timers.push(setTimeout(function () {
-      setCell('cellLaunch', '17:30 UTC', '17:30 UTC', true);
-      setLog('Launch boat reasignada', 'Launch boat reassigned');
+      setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', true);
+      setLog('Traslado reasignado', 'Transfer reassigned');
     }, 6300));
 
     timers.push(setTimeout(frameEnd, 7500));
@@ -207,16 +207,16 @@
         return;
       }
 
-      var urgent = form.querySelector('input[name="urgencia"]:checked');
-      var isNow = urgent && urgent.value === 'escala-en-curso';
+      var kind = form.querySelector('input[name="tipo"]:checked');
+      var toShip = kind && kind.value === 'viaje-a-buque';
 
       status.style.color = 'var(--green)';
       if (lang === 'en') {
-        status.textContent = isNow
+        status.textContent = toShip
           ? 'Received. We call you back in under 30 minutes. If it cannot wait, ring the duty phone: +34 6XX XXX XXX. (Demo: the form endpoint is not connected yet.)'
           : 'Received. We reply today with a proposal or with specific questions. (Demo: the form endpoint is not connected yet.)';
       } else {
-        status.textContent = isNow
+        status.textContent = toShip
           ? 'Recibido. Te llamamos en menos de 30 minutos. Si no puede esperar, marca el teléfono de guardia: +34 6XX XXX XXX. (Demo: el endpoint del formulario aún no está conectado.)'
           : 'Recibido. Te contestamos hoy con una propuesta o con preguntas concretas. (Demo: el endpoint del formulario aún no está conectado.)';
       }

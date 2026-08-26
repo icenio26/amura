@@ -23,6 +23,19 @@ En cuanto exista una relación comercial real y consentimiento por escrito, se a
 | CJ Service | Servicios técnicos | Movilidad de personal técnico | Responsable de operaciones |
 | UCC Logistic | Logística | Viajes de equipo, eventos y formaciones | Dirección / RRHH |
 
+## Dos interlocutores en cada una de estas empresas
+
+La misma cuenta tiene dos entradas, y conviene trabajar las dos:
+
+| Interlocutor | Qué le duele | Con qué se le abre la puerta |
+|---|---|---|
+| **Operaciones / service coordinator** | Un técnico que tiene que estar en el puerto cuando el buque hace escala, con el ETA moviéndose | Guardia 24/7 y reprogramación sin recargo |
+| **Dirección / responsable comercial** | Ferias, misiones comerciales y rondas de visitas: varias personas, varios países, una sola liquidación | Un presupuesto cerrado y un único interlocutor para todo el equipo |
+
+El viaje comercial es **la puerta de entrada más fácil**: se planifica con antelación, no exige
+guardia nocturna y el presupuesto es mayor. Una vez abierta la cuenta de empresa, el viaje técnico
+entra solo. Priorizar ferias y misiones en los primeros contactos.
+
 ## Segmentos a los que corresponden (esto sí es publicable)
 
 1. Agencias marítimas y consignatarias

@@ -1,7 +1,13 @@
 # Amura · Marine Travel & Events
 
-Web corporativa de una agencia de viajes y eventos especializada en el **sector marítimo**,
+Web corporativa de una agencia de viajes de empresa especializada en el **sector marítimo**,
 con base en el Puerto de Algeciras y Palmones (Campo de Gibraltar).
+
+**Alcance actual:** el viaje, de puerta a destino — vuelos, trenes, hoteles, taxi y traslados,
+autobús para grupos, y reprogramación 24/7 cuando el plan cambia. Nada dentro del recinto
+portuario. Los dos públicos son quien va al barco (técnicos, inspectores, tripulación) y quien va
+a vender (dirección y equipo comercial: ferias, misiones comerciales, visitas a clientes).
+El detalle y las fases están en `docs/alcance-y-fases.md`.
 
 Sitio estático: HTML, CSS y JavaScript sin dependencias ni build. Se despliega tal cual.
 
@@ -28,6 +34,9 @@ on time»**. Cambiar el nombre es una búsqueda y reemplazo en `index.html`; el 
 depende de él.
 
 ## Decisiones que gobiernan el contenido
+
+0. **El alcance manda sobre los informes.** `docs/alcance-y-fases.md` es la referencia; los
+   informes `01`–`03` se escribieron para un alcance más amplio y se conservan como registro.
 
 1. **Nada que no sea cierto hoy.** La empresa acaba de arrancar: la web no muestra logos de
    clientes, testimonios, años de experiencia ni volúmenes. En su lugar publica compromisos

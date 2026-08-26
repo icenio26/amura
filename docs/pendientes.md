@@ -5,7 +5,7 @@
 | # | Qué | Dónde |
 |---|---|---|
 | 1 | **Teléfono de guardia real.** Ahora aparece `+34 6XX XXX XXX` y los enlaces apuntan a `tel:+34600000000` / `wa.me/34600000000`. | `index.html` (7 apariciones), `assets/js/main.js` (mensajes de confirmación) |
-| 2 | **Dominio y correo.** `operaciones@amura.es` es un marcador. Registrar `.com` y `.es` antes de imprimir nada. | `index.html` |
+| 2 | **Dominio y correo.** `reservas@amura.es` es un marcador. Registrar `.com` y `.es` antes de imprimir nada. | `index.html` |
 | 3 | **Datos registrales del pie**: denominación social, CIF y número de registro de agencia de viajes de la Junta de Andalucía. Hoy dicen «pendiente», que es cierto pero no puede seguir así al publicar. | `index.html`, footer |
 | 4 | **Textos legales**: aviso legal (LSSI-CE art. 10), política de privacidad (RGPD/LOPDGDD), política de cookies y condiciones de contratación. Los cuatro enlaces del pie apuntan a `#`. Debe redactarlos un profesional. | `index.html`, footer |
 | 5 | **Conectar el formulario.** Ahora valida y muestra confirmación, pero no envía. Ver abajo. | `index.html`, `assets/js/main.js` |
