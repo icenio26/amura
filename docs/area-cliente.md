@@ -30,7 +30,7 @@ La resolución son **dos roles**:
 |---|---|---|
 | Ve sus propios viajes | Sí | Sí, y los de todo el equipo |
 | Documentos (tarjeta, bono, voucher) | Sí, **sin ningún importe** | Sí |
-| Pestaña de facturas | **No existe para este rol** | Sí, con proveedor y gestión desglosados |
+| Pestaña de facturas | **No existe para este rol** | Sí, con una línea por epígrafe a su PVP |
 | Edita sus preferencias | Sí | Sí |
 
 Es además como funciona en la práctica: el técnico que embarca no debe ver lo que ha costado su

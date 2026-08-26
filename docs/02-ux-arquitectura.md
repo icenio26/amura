@@ -1,5 +1,9 @@
 # Amura — Estrategia UX de la web
 
+> Corrección posterior: donde este informe dice "sin coste de gestión", léase **"sin cargo
+> añadido"**. El modelo de facturación es una línea por epígrafe a su PVP, sin partida de gestión
+> separada. Ver `alcance-y-fases.md`.
+
 Premisa: esto no es una web de viajes, es la **ficha técnica de un proveedor operativo**. Debe parecerse más a un servicio de asistencia portuaria que a una agencia. Bilingüe ES/EN con conmutador visible: muchos crew managers que deciden están fuera de España.
 
 ## 1. Jobs To Be Done y objeciones

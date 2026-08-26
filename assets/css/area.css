@@ -139,18 +139,13 @@
 }
 
 /* ---------- Facturas ---------- */
-.table-scroll { position: relative; overflow-x: auto; }
-.bills { width: 100%; border-collapse: collapse; min-width: 720px; }
-.bills th {
-  text-align: left; padding: .7rem .85rem; border-bottom: 1px solid var(--line);
-  font-family: var(--font-mono); font-size: var(--fs-label); font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3);
+.doc__amount {
+  font-family: var(--font-mono); font-size: .92rem; font-variant-numeric: tabular-nums;
+  color: var(--ink); white-space: nowrap;
 }
-.bills td { padding: .85rem; border-bottom: 1px solid var(--line-soft); font-size: .9rem; }
-.bills .num { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
-.bills tbody tr:hover { background: var(--surface); }
-.bills .ref { font-family: var(--font-mono); font-size: .82rem; }
-.bills .total { font-weight: 600; }
+.doc--total { background: var(--surface-2); border-top: 1px solid var(--line); }
+.doc--total .doc__id strong,
+.doc--total .doc__amount { font-weight: 600; font-size: 1rem; }
 
 /* ---------- Visor de documento ---------- */
 .docviewer { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 1rem; }

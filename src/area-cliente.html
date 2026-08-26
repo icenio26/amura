@@ -221,26 +221,10 @@
       <p class="panel-intro"
          data-es="Solo visible para los perfiles de administración de la cuenta. Los viajeros ven su documentación sin ningún importe."
          data-en="Only visible to account admin profiles. Travellers see their documents with no amounts at all.">Solo visible para los perfiles de administración de la cuenta. Los viajeros ven su documentación sin ningún importe.</p>
-      <div class="table-scroll">
-        <table class="bills">
-          <thead>
-            <tr>
-              <th scope="col" data-es="Factura" data-en="Invoice">Factura</th>
-              <th scope="col" data-es="Concepto" data-en="Concept">Concepto</th>
-              <th scope="col" data-es="Fecha" data-en="Date">Fecha</th>
-              <th scope="col" class="num" data-es="Proveedores" data-en="Suppliers">Proveedores</th>
-              <th scope="col" class="num" data-es="Gestión" data-en="Handling">Gestión</th>
-              <th scope="col" class="num" data-es="Total" data-en="Total">Total</th>
-              <th scope="col" data-es="Estado" data-en="Status">Estado</th>
-              <th scope="col"><span class="sr-only" data-es="Descargar" data-en="Download">Descargar</span></th>
-            </tr>
-          </thead>
-          <tbody id="billsBody"></tbody>
-        </table>
-      </div>
+      <div id="billsList"></div>
       <p class="panel-note"
-         data-es="El coste de gestión va siempre desglosado y separado del coste del proveedor. Reprogramar un viaje no genera línea de gestión."
-         data-en="Our handling fee is always itemised separately from supplier cost. Rebuilding a trip generates no handling line.">El coste de gestión va siempre desglosado y separado del coste del proveedor. Reprogramar un viaje no genera línea de gestión.</p>
+         data-es="Cada epígrafe va a su PVP: vuelo, tren, hotel, traslado. No hay línea de gestión aparte, y rehacer un viaje no añade ningún cargo: solo la diferencia de tarifa, si la hay."
+         data-en="Every item is quoted at its retail price: flight, train, hotel, transfer. There is no separate handling line, and rebuilding a trip adds no charge: only the fare difference, if there is one.">Cada epígrafe va a su PVP: vuelo, tren, hotel, traslado. No hay línea de gestión aparte, y rehacer un viaje no añade ningún cargo: solo la diferencia de tarifa, si la hay.</p>
     </div>
 
   </div>

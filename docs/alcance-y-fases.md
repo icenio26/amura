@@ -15,7 +15,7 @@
 | Hoteles con check-in tardío | Tramitación de visados |
 | Taxi y traslado privado puerta a puerta | Coordinación con la consignataria dentro del puerto |
 | Autobús y shuttle para grupos | Spare parts acompañadas |
-| Reprogramación 24/7 sin recargo de gestión | Documentación de sign-on / sign-off |
+| Reprogramación 24/7 sin cargo añadido | Documentación de sign-on / sign-off |
 
 La web lo dice de forma explícita en una pregunta frecuente, en lugar de dejarlo ambiguo:
 *«Hoy no, y preferimos decirlo claro. Los pases de acceso y el traslado a bordo los lleva tu
@@ -33,6 +33,16 @@ un enlace distinto:
 | `viajes-tecnicos.html` | Operaciones, servicio técnico, crewing | La ventana de escala manda |
 | `viajes-comerciales.html` | Dirección y comercial | Varias personas, un presupuesto, una factura |
 | `area-cliente.html` | Clientes con cuenta abierta | Preferencias, documentos y facturas |
+
+## Modelo de facturación
+
+**Una línea por epígrafe, cada una a su PVP.** Vuelo 412,00 €, hotel 186,00 €, traslado 145,00 €,
+y el total. El margen va dentro de cada concepto: **no hay partida de gestión separada del coste de
+proveedor**, y la web no debe decir lo contrario en ningún sitio.
+
+Lo que sí se promete es que **rehacer un viaje no añade ningún cargo**: si el plan cambia solo se
+repercute la diferencia de tarifa, si la hay. Es distinto de "sin coste de gestión", que daría a
+entender que existe una partida de gestión que en este modelo no existe.
 
 ## Los dos públicos
 
@@ -55,8 +65,9 @@ difícil de copiar. Lo que queda sigue siendo real y sí es ejecutable desde el 
 1. **Planificar contra el ETA, no contra el calendario.** Elegir el vuelo por su margen de
    recuperación y no por su precio de salida es una decisión que una OTA no toma nunca.
 2. **Guardia 24/7 con persona nominal** que puede decidir y pagar de madrugada.
-3. **No cobrar la gestión del cambio.** Es el momento en que las agencias generalistas ganan
-   dinero y el cliente se siente castigado por algo que no controla.
+3. **No cobrar por rehacer el viaje.** Solo se repercute la diferencia de tarifa, si la hay. Es el
+   momento en que las agencias generalistas ganan dinero y el cliente se siente castigado por algo
+   que no controla.
 4. **Conocer el sector y estar aquí.** Vocabulario, tiempos reales aeropuerto-puerto y las ferias
    que importan.
 

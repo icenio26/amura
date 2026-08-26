@@ -89,16 +89,43 @@
     }
   };
 
+  /* Una línea por epígrafe, a su PVP. No hay partida de gestión: el margen
+     va dentro de cada concepto. */
   var INVOICES = [
-    { ref: 'F-2026-0184', concepto: { es: 'Escala Algeciras · 1 viajero', en: 'Algeciras call · 1 traveller' },
-      fecha: '12/03/2026', prov: '1.240,00', gest: '95,00', total: '1.335,00',
-      estado: { key: 'warn', es: 'Pendiente', en: 'Outstanding' } },
-    { ref: 'F-2026-0151', concepto: { es: 'Feria SMM · equipo de 4', en: 'SMM fair · team of 4' },
-      fecha: '28/02/2026', prov: '6.820,00', gest: '380,00', total: '7.200,00',
-      estado: { key: 'ok', es: 'Pagada', en: 'Paid' } },
-    { ref: 'F-2026-0122', concepto: { es: 'Relevo de tripulación · Algeciras', en: 'Crew change · Algeciras' },
-      fecha: '09/02/2026', prov: '980,00', gest: '75,00', total: '1.055,00',
-      estado: { key: 'ok', es: 'Pagada', en: 'Paid' } }
+    {
+      ref: 'F-2026-0184', fecha: '12/03/2026',
+      concepto: { es: 'Escala Algeciras · 1 viajero', en: 'Algeciras call · 1 traveller' },
+      estado: { key: 'warn', es: 'Pendiente', en: 'Outstanding' },
+      lineas: [
+        { k: { es: 'Vuelo', en: 'Flight' }, d: { es: 'HAM → AGP · ida y vuelta', en: 'HAM → AGP · return' }, v: '412,00' },
+        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Palmones · 2 noches', en: 'Palmones · 2 nights' }, v: '186,00' },
+        { k: { es: 'Traslado', en: 'Transfer' }, d: { es: 'AGP → Algeciras · ida y vuelta', en: 'AGP → Algeciras · return' }, v: '145,00' }
+      ],
+      total: '743,00'
+    },
+    {
+      ref: 'F-2026-0151', fecha: '28/02/2026',
+      concepto: { es: 'Feria SMM · equipo de 4', en: 'SMM fair · team of 4' },
+      estado: { key: 'ok', es: 'Pagada', en: 'Paid' },
+      lineas: [
+        { k: { es: 'Vuelos', en: 'Flights' }, d: { es: 'AGP → HAM · 4 pasajeros', en: 'AGP → HAM · 4 passengers' }, v: '2.480,00' },
+        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Hamburgo · 4 habitaciones × 3 noches', en: 'Hamburg · 4 rooms × 3 nights' }, v: '3.960,00' },
+        { k: { es: 'Traslados', en: 'Transfers' }, d: { es: 'Aeropuerto y recinto ferial', en: 'Airport and fairground' }, v: '520,00' },
+        { k: { es: 'Tren', en: 'Rail' }, d: { es: 'Desplazamientos en Hamburgo', en: 'Journeys within Hamburg' }, v: '240,00' }
+      ],
+      total: '7.200,00'
+    },
+    {
+      ref: 'F-2026-0122', fecha: '09/02/2026',
+      concepto: { es: 'Relevo de tripulación · Algeciras', en: 'Crew change · Algeciras' },
+      estado: { key: 'ok', es: 'Pagada', en: 'Paid' },
+      lineas: [
+        { k: { es: 'Vuelos', en: 'Flights' }, d: { es: '2 tripulantes · ida y vuelta', en: '2 crew · return' }, v: '690,00' },
+        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Algeciras · 2 habitaciones × 1 noche', en: 'Algeciras · 2 rooms × 1 night' }, v: '165,00' },
+        { k: { es: 'Traslados', en: 'Transfers' }, d: { es: 'Aeropuerto y puerto', en: 'Airport and port' }, v: '200,00' }
+      ],
+      total: '1.055,00'
+    }
   ];
 
   var SEATS = { ventana: '14A', pasillo: '14C', indiferente: '14B' };
@@ -242,20 +269,41 @@
   }
 
   function renderInvoices() {
-    $('billsBody').innerHTML = INVOICES.map(function (bill) {
+    $('billsList').innerHTML = INVOICES.map(function (bill) {
+      var lines = bill.lineas.map(function (line) {
+        return '' +
+          '<li class="doc">' +
+            '<span class="doc__id">' +
+              '<strong ' + pair(line.k) + '>' + esc(say(line.k)) + '</strong>' +
+              '<span ' + pair(line.d) + '>' + esc(say(line.d)) + '</span>' +
+            '</span>' +
+            '<span class="doc__amount">' + esc(line.v) + ' €</span>' +
+          '</li>';
+      }).join('');
+
       return '' +
-        '<tr>' +
-          '<td class="ref">' + esc(bill.ref) + '</td>' +
-          '<td ' + pair(bill.concepto) + '>' + esc(say(bill.concepto)) + '</td>' +
-          '<td class="num">' + esc(bill.fecha) + '</td>' +
-          '<td class="num">' + esc(bill.prov) + ' €</td>' +
-          '<td class="num">' + esc(bill.gest) + ' €</td>' +
-          '<td class="num total">' + esc(bill.total) + ' €</td>' +
-          '<td><span class="chip' + (bill.estado.key === 'warn' ? ' chip--admin' : '') + '" ' +
-            pair(bill.estado) + '>' + esc(say(bill.estado)) + '</span></td>' +
-          '<td><button type="button" class="btn btn--ghost btn--sm" data-bill="' + esc(bill.ref) + '" ' +
-            'data-es="Descargar" data-en="Download">Descargar</button></td>' +
-        '</tr>';
+        '<article class="trip">' +
+          '<header class="trip__head">' +
+            '<span class="trip__title">' +
+              '<strong>' + esc(bill.ref) + '</strong>' +
+              '<span ' + pair(bill.concepto) + '>' + esc(say(bill.concepto)) + '</span>' +
+            '</span>' +
+            '<span class="trip__dates">' + esc(bill.fecha) + '</span>' +
+            '<span class="chip' + (bill.estado.key === 'warn' ? ' chip--admin' : '') + '" ' +
+              pair(bill.estado) + '>' + esc(say(bill.estado)) + '</span>' +
+            '<button type="button" class="btn btn--ghost btn--sm" data-bill="' + esc(bill.ref) + '" ' +
+              'data-es="Descargar" data-en="Download">Descargar</button>' +
+          '</header>' +
+          '<ul class="docs">' + lines +
+            '<li class="doc doc--total">' +
+              '<span class="doc__id">' +
+                '<strong data-es="Total" data-en="Total">Total</strong>' +
+                '<span data-es="IVA incluido donde aplica" data-en="VAT included where applicable">IVA incluido donde aplica</span>' +
+              '</span>' +
+              '<span class="doc__amount">' + esc(bill.total) + ' €</span>' +
+            '</li>' +
+          '</ul>' +
+        '</article>';
     }).join('');
   }
 

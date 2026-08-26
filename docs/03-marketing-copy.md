@@ -121,7 +121,9 @@ Sí. Cada expediente tiene un teléfono de guardia para fuera de horario, festiv
 Nuestra base está en Algeciras y Palmones, pero gestionamos desplazamientos hacia cualquier puerto. Donde no llegamos físicamente, trabajamos con proveedores locales y mantenemos nosotros la coordinación y el interlocutor único.
 
 **¿Cómo facturáis y con qué condiciones?**
-Presupuesto cerrado antes de emitir, con los costes de gestión desglosados y separados de los costes del proveedor. Condiciones de pago acordadas por escrito al abrir cuenta de empresa; para clientes nuevos podemos empezar por expediente.
+Presupuesto cerrado antes de emitir, con una línea por epígrafe a su PVP: vuelo, tren, hotel, traslado. No hay partida de gestión aparte. Condiciones de pago acordadas por escrito al abrir cuenta de empresa; para clientes nuevos podemos empezar por expediente.
+
+> Corregido respecto a la propuesta original del agente, que planteaba desglosar la gestión aparte del coste de proveedor. El modelo real es PVP por epígrafe: ver `alcance-y-fases.md`.
 
 **¿Y si surge una urgencia a las tres de la madrugada?**
 Se atiende. La guardia sirve exactamente para eso: buscar alternativa de vuelo, mover el hotel, avisar al conductor o reorganizar el launch boat mientras el resto del mundo duerme.
@@ -194,7 +196,7 @@ Sólo listado de lo que debe figurar; el texto legal debe redactarlo un profesio
 | 2 | **Alianza con 2-3 consignatarias.** Acuerdo simple de derivación: ellos reciben la petición de viaje del armador, nosotros la ejecutamos y ellos no pierden el control del expediente. | Bajo | Muy alto | Semanas 2-8 |
 | 3 | **LinkedIn del fundador, no de la marca.** 2 posts/semana contando casos operativos reales y aprendizajes; conexión personalizada con operations, crewing y port captains del Campo de Gibraltar. | Bajo | Alto | Semanas 1-12 |
 | 4 | **Alta y presencia en asociaciones sectoriales.** Comunidad portuaria y clústeres marítimos locales, colegio/asociación de consignatarios, cámara de comercio del Campo de Gibraltar: cuota baja, acceso directo al censo de empresas. | Bajo | Medio-alto | Semanas 3-6 |
-| 5 | **Guardia 24/7 como producto de entrada.** Ofrecer gestión de una primera escala sin coste de gestión para probar el servicio, con liquidación transparente. Convierte la falta de trayectoria en una prueba sin riesgo. | Bajo | Alto | Semanas 4-12 |
+| 5 | **Guardia 24/7 como producto de entrada.** Ofrecer la primera escala a precio de proveedor, sin nuestro margen, para probar el servicio (decisión comercial pendiente de confirmar). Convierte la falta de trayectoria en una prueba sin riesgo. | Bajo | Alto | Semanas 4-12 |
 | 6 | **Asistencia a una feria como visitante, no como expositor.** Elegir una sola (calendario de Nor-Shipping/SMM/Posidonia según año) y agendar 20 reuniones previas por LinkedIn y email. Coste bajo, densidad de contactos muy alta. | Medio | Medio-alto | Semanas 8-12 |
 
 Complementos baratos: ficha de Google Business Profile en Algeciras y Palmones, número de guardia único publicado en todas partes, y un CRM ligero con seguimiento a 30/60/90 días de cada visita.
@@ -211,7 +213,7 @@ Somos una agencia de viajes corporativos recién creada en Algeciras, dedicada e
 
 Somos nuevos y no voy a venderte trayectoria. Lo que ofrecemos es lo que más suele fallar: seguimiento del ETA, reprogramación cuando la escala se mueve y un teléfono de guardia que responde de madrugada.
 
-Si te encaja, me gustaría gestionar una escala vuestra sin coste de gestión, para que juzguéis el servicio con un caso real.
+Si te encaja, me gustaría gestionar una escala vuestra para que juzguéis el servicio con un caso real.
 
 ¿Te va bien una llamada de 15 minutos esta semana?
 

@@ -115,7 +115,7 @@
     setCell('cellFlight', 'HAM → AGP · 11:20', 'HAM → AGP · 11:20', false);
     setCell('cellHotel', 'Palmones · 2 noches', 'Palmones · 2 nights', false);
     setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', false);
-    setLog('Rehecho sin coste de gestión', 'Rebuilt at no handling cost');
+    setLog('Rehecho sin cargo añadido', 'Rebuilt at no extra charge');
   }
 
   function play() {
