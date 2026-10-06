@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  var i18n = window.Amura || { applyLang: function () {}, currentLang: function () { return 'es'; } };
+  var i18n = window.AmuraI || { applyLang: function () {}, currentLang: function () { return 'es'; } };
 
   /* ---------- Datos de ejemplo ---------- */
 
@@ -152,7 +152,7 @@
 
   /* ---------- Sesión (solo demostración) ---------- */
 
-  var SESSION_KEY = 'amura:demo-user';
+  var SESSION_KEY = 'amura-i:demo-user';
   var current = null;
 
   function readSession() {
@@ -169,7 +169,7 @@
   var FIELDS = ['pfRole', 'pfPhone', 'pfSeat', 'pfMeal', 'pfBag', 'pfLoyalty',
                 'pfBed', 'pfFloor', 'pfNotes', 'pfDoc', 'pfDocExp'];
 
-  function prefsKey() { return 'amura:prefs:' + (current ? current.id : 'anon'); }
+  function prefsKey() { return 'amura-i:prefs:' + (current ? current.id : 'anon'); }
 
   function loadPrefs() {
     var saved = {};

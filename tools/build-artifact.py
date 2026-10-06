@@ -61,7 +61,7 @@ def read(rel):
 
 
 def main():
-    out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "amura-preview.html")
+    out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "amura-i-preview.html")
     home = read("index.html")
 
     title = re.search(r"<title>(.*?)</title>", home, re.S).group(1)

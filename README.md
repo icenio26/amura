@@ -1,4 +1,4 @@
-# Amura · Marine Travel & Events
+# Amura-i · Marine Travel & Events
 
 Web corporativa de una agencia de viajes de empresa especializada en el **sector marítimo**,
 con base en el Puerto de Algeciras y Palmones (Campo de Gibraltar).
@@ -45,10 +45,11 @@ shipping, baja distintividad registrable y mucho ruido de búsqueda— y se recu
 donde sí funciona: como **color de marca** (el verde de estribor, usado sólo como señal) y como
 posible nombre del protocolo de confirmación 24/7.
 
-La marca propuesta es **Amura** (el costado de proa, la parte del buque que rompe primero el
-agua), con descriptor fijo *Marine Travel & Events* y tagline **«A bordo a tiempo» / «On board,
-on time»**. Cambiar el nombre es una búsqueda y reemplazo en `index.html`; el sistema visual no
-depende de él.
+La marca es **Amura-i**: *amura* es el costado de proa, la parte del buque que rompe primero el
+agua, y la *i* final se dibuja en el logo con un trazo vertical bajo el punto verde. Lleva
+descriptor fijo *Marine Travel & Events* y tagline **«A bordo a tiempo» / «On board, on time»**.
+Cambiar el nombre es una búsqueda y reemplazo en `src/` seguida de `python3 tools/build.py`; el
+sistema visual no depende de él.
 
 ## Decisiones que gobiernan el contenido
 

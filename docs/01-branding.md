@@ -36,7 +36,7 @@ la escala no se toca") y como **color de marca** —la luz verde vive en la pale
 
 | Nombre | Rationale (una línea) |
 |---|---|
-| **Amura** | Costado de proa, la parte del buque que rompe primero el agua; corto, español, pronunciable en inglés, sin ruido sectorial y con dominio realista. |
+| **Amura-i** | Costado de proa, la parte del buque que rompe primero el agua; corto, español, pronunciable en inglés, sin ruido sectorial y con dominio realista. |
 | **Recalada** | Momento exacto en que se avista tierra tras la travesía: la llegada, que es justo lo que vendéis. |
 | **Escala** | Doble sentido perfecto: escala del buque y escala del vuelo; el problema y la solución en cinco letras. |
 | **Pilotina** | La lancha que sube al práctico a bordo: literalmente llevar a la persona correcta hasta el costado. |
@@ -45,28 +45,28 @@ la escala no se toca") y como **color de marca** —la luz verde vive en la pale
 | **Estribor** | Rescata el verde del fundador con vocabulario correcto, pero es largo y áspero para un anglófono. |
 | **Bitácora** | El cuaderno donde queda registrado todo lo que pasa a bordo: orden, trazabilidad, guardia. |
 
-**TOP 3:** Amura · Recalada · Pilotina.
+**TOP 3:** Amura-i · Recalada · Pilotina.
 
-**Valoración de "Amura":** el mejor equilibrio. Término náutico auténtico, sonoridad limpia en las dos
+**Valoración de "Amura-i":** el mejor equilibrio. Término náutico auténtico, sonoridad limpia en las dos
 lenguas de trabajo, fácil al teléfono y lo bastante abstracto para cubrir viajes *y* eventos. Su única
-debilidad —opaco para quien no navega— se resuelve con descriptor fijo: **Amura · Marine Travel &
+debilidad —opaco para quien no navega— se resuelve con descriptor fijo: **Amura-i · Marine Travel &
 Events**. *Pilotina* es más evocador pero arrastra un riesgo caro: os leerían como operador de lanchas,
 categoría vecina y competidora. *Recalada* es bellísimo y muy español, pero se pronuncia mal fuera y
 estrecha la pata de eventos.
 
-**Recomendación final: AMURA.** Arquitectura de marca resultante: **Amura** (marca) → **Green Light**
-(protocolo de confirmación 24/7) → **Amura Events** (convenciones, ferias, incentivos).
+**Recomendación final: AMURA-I.** Arquitectura de marca resultante: **Amura-i** (marca) → **Green Light**
+(protocolo de confirmación 24/7) → **Amura-i Events** (convenciones, ferias, incentivos).
 Antes de imprimir nada: verificar EUIPO clases 39 y 41, y registrar `.com`, `.es` y `.travel`.
 
 ---
 
 ## 3. Posicionamiento
 
-**Frase de posicionamiento:** *Amura es la agencia de viajes corporativos del sector marítimo:
+**Frase de posicionamiento:** *Amura-i es la agencia de viajes corporativos del sector marítimo:
 ponemos a la persona correcta a bordo dentro de la ventana de escala.*
 
 **Propuesta de valor central:** no vendemos billetes ni tarifas: asumimos el **riesgo operativo del
-desplazamiento crítico**. Un superintendente que llega dos horas tarde cuesta la escala entera; Amura
+desplazamiento crítico**. Un superintendente que llega dos horas tarde cuesta la escala entera; Amura-i
 convierte ese riesgo en un compromiso con nombre y teléfono.
 
 **Pilares de marca**

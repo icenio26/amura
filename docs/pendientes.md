@@ -32,7 +32,7 @@ gestión de viajes ya lo cubre, porque probablemente salga más barato que const
 
 ## Marca
 
-- Verificar disponibilidad de **Amura** en EUIPO, clases 39 (viajes) y 41 (eventos y formación).
+- Verificar disponibilidad de **Amura-i** en EUIPO, clases 39 (viajes) y 41 (eventos y formación).
 - Registrar los dominios antes de cualquier material impreso.
 - Producir el logotipo definitivo a partir del concepto de `docs/01-branding.md`. El de la web es
   una versión SVG mínima del mismo concepto (ángulo de amura + punto de luz verde).

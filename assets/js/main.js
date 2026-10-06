@@ -9,7 +9,7 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- 1. Idioma ---------- */
-  var STORAGE_KEY = 'amura:lang';
+  var STORAGE_KEY = 'amura-i:lang';
 
   function storedLang() {
     try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
@@ -47,7 +47,7 @@
 
   /* El área de cliente pinta contenido después de esta pasada: necesita
      poder volver a traducir lo que inserta. */
-  window.Amura = { applyLang: applyLang, currentLang: currentLang };
+  window.AmuraI = { applyLang: applyLang, currentLang: currentLang };
 
   var initial = storedLang();
   if (initial !== 'es' && initial !== 'en') {

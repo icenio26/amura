@@ -3,5 +3,5 @@ node_modules/
 *.log
 .vscode/
 .idea/
-amura-preview.html
-amura-standalone.html
+amura-i-preview.html
+amura-i-standalone.html

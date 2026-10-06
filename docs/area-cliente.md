@@ -68,7 +68,7 @@ Por orden, y sin adelantar nada hasta tener clientes que lo usen:
 Existen plataformas de gestión de viajes corporativos que ya traen perfil del viajero, documentos y
 facturación. Si una cubre el caso, **integrarse sale más barato que construir y mantener esto**, y
 el tiempo se dedica a vender. Merece una tarde de comparación antes de escribir la primera línea
-de backend: lo que de verdad diferencia a Amura es la guardia de madrugada y la reprogramación sin
+de backend: lo que de verdad diferencia a Amura-i es la guardia de madrugada y la reprogramación sin
 recargo, no tener portal propio.
 
 Mientras tanto, y con pocos clientes, un correo con los documentos adjuntos y una carpeta

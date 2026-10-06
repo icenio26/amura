@@ -1,4 +1,4 @@
-# Amura — Estrategia UX de la web
+# Amura-i — Estrategia UX de la web
 
 > Corrección posterior: donde este informe dice "sin coste de gestión", léase **"sin cargo
 > añadido"**. El modelo de facturación es una línea por epígrafe a su PVP, sin partida de gestión
@@ -28,7 +28,7 @@ Se neutraliza con **vocabulario operativo**: launch boat al fondeadero de Algeci
 4. **Cómo funciona una escala** (ver §3). Ancho completo, fondo diferenciado.
 5. **Servicios — grid 2×4**, icono lineal + etiqueta + una línea: vuelos y reemisiones fuera de horario · hoteles con check-in flexible y no-show gestionado · traslados a muelle y a AGP/GIB/SVQ · launch boat a fondeadero · gate pass y acreditaciones · cartas de invitación y visados · spare parts acompañadas · sign-on/sign-off documental.
 6. **Eventos corporativos — banda 60/40**, visualmente más ligera y con CTA propia. Convenciones, ferias sectoriales (nombrarlas: Posidonia, SMM, Nor-Shipping), incentivos, formaciones.
-7. **Por qué Amura — 2×2** (ver §4): cuatro bloques con dato duro, cero adjetivos.
+7. **Por qué Amura-i — 2×2** (ver §4): cuatro bloques con dato duro, cero adjetivos.
 8. **Cobertura — mapa 60% + lista 40%.** Mapa estático del Estrecho y tiempos reales de traslado a los tres aeropuertos. Prueba de proximidad física.
 9. **Contacto — 50/50.** Formulario a la izquierda; a la derecha, contacto directo: teléfono de guardia, WhatsApp, email, dirección. Quien no rellena formularios, llama.
 10. **Footer.** Razón social, CIF, número de registro de agencia de viajes, dirección física, teléfono 24 h repetido, legal/privacidad/cookies. Aquí el footer es **prueba de existencia legal**, no relleno.
@@ -90,7 +90,7 @@ Sin backend, `mailto:` es inaceptable en B2B: servicio de formularios estático 
 ## 7. Qué NO hacer
 
 1. **Imaginería de turismo.** Playas, cruceros, maletas rodando, azafatas sonrientes, portátil con café. Un technical superintendent cierra la pestaña. Solo muelle, grúas, portacontenedores, fondeadero, pilot boat: mejor foto propia mediocre que stock perfecto.
-2. **Buscador de vuelos u hoteles / widget de reservas.** Convierte a Amura en algo comparable a una OTA y destruye el argumento: el cliente no viene a reservar, viene a delegar. Y exigiría el backend que no hay.
+2. **Buscador de vuelos u hoteles / widget de reservas.** Convierte a Amura-i en algo comparable a una OTA y destruye el argumento: el cliente no viene a reservar, viene a delegar. Y exigiría el backend que no hay.
 3. **Logos de "clientes" o "partners" y testimonios sin nombre.** Insinuar una cartera inexistente es engañoso y, en un sector tan pequeño y conectado, se detecta y se comenta. Igual de dañino: un "+500 viajes gestionados" inventado.
 4. **Precios, "desde X €", paquetes o descuentos.** El eje de decisión es la fiabilidad, no el precio; anunciarlo invita a compararte con una OTA y a perder por 12 €.
 5. **Contacto solo por formulario, chatbot o "presupuesto en 3 pasos".** Ocultar el teléfono contradice frontalmente la promesa 24/7. Añádase pop-up de newsletter, cookie wall agresivo y exit-intent. Un proveedor de guardia no interrumpe: atiende.

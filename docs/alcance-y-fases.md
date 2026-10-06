@@ -57,7 +57,7 @@ persona quien decide**. Entrar por un viaje a feria es más fácil que entrar po
 nocturna, y una vez abierta la cuenta el viaje técnico llega solo. Conviene tratarlo como la
 puerta de entrada, no como el negocio secundario.
 
-## ¿Qué diferencia a Amura sin los trámites portuarios?
+## ¿Qué diferencia a Amura-i sin los trámites portuarios?
 
 Es la pregunta correcta, porque al quitar el launch boat y los pases se pierde la parte más
 difícil de copiar. Lo que queda sigue siendo real y sí es ejecutable desde el día uno:
@@ -87,13 +87,13 @@ por orden:
    necesita cada operación, quién la solicita —normalmente la consignataria, no la agencia de
    viajes— y qué seguro cubre al pasajero. **Esto hay que confirmarlo con la APBA y con un
    proveedor real; no lo des por sabido.**
-3. **Decidir el papel de Amura.** Lo realista al principio no es operar, sino **coordinar**:
-   Amura contrata al proveedor de lancha en nombre del cliente y lo integra en un único
+3. **Decidir el papel de Amura-i.** Lo realista al principio no es operar, sino **coordinar**:
+   Amura-i contrata al proveedor de lancha en nombre del cliente y lo integra en un único
    presupuesto y una única factura. Eso ya es un servicio vendible y no requiere licencia propia.
 4. **Probarlo una vez antes de publicarlo.** Un solo caso real, con un cliente que ya confíe.
    Si sale bien, entonces se anuncia. Anunciar primero y aprender después es como se pierde una
    cuenta en un sector donde todo el mundo se conoce.
 
 Mientras tanto, la alianza con una consignataria (acción nº 2 del plan de 90 días en
-`03-marketing-copy.md`) es el camino barato: ellos ya tienen la relación con el puerto, y Amura
+`03-marketing-copy.md`) es el camino barato: ellos ya tienen la relación con el puerto, y Amura-i
 aporta la parte de viaje que ellos no quieren gestionar.
