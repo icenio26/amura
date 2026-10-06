@@ -1,7 +1,7 @@
 # Amura-i · Marine Travel & Events
 
 Web corporativa de una agencia de viajes de empresa especializada en el **sector marítimo**,
-con base en el Puerto de Algeciras y Palmones (Campo de Gibraltar).
+desde el Estrecho de Gibraltar al resto de Europa y del mundo.
 
 **Alcance actual:** el viaje, de puerta a destino — vuelos, trenes, hoteles, taxi y traslados,
 autobús para grupos, y reprogramación 24/7 cuando el plan cambia. Nada dentro del recinto

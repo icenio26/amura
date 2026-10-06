@@ -32,8 +32,8 @@
   var TRIPS = [
     {
       viajero: 'Marta Gil', propio: true,
-      motivo: { es: 'Embarque en buque · Algeciras', en: 'Vessel boarding · Algeciras' },
-      ruta: { es: 'Hamburgo → Algeciras', en: 'Hamburg → Algeciras' },
+      motivo: { es: 'Embarque en buque · Estrecho de Gibraltar', en: 'Vessel boarding · Strait of Gibraltar' },
+      ruta: { es: 'Hamburgo → Estrecho de Gibraltar', en: 'Hamburg → Strait of Gibraltar' },
       fechas: { es: '12 – 14 mar 2026', en: '12 – 14 Mar 2026' },
       salida: '12/03/2026', regreso: '14/03/2026',
       estado: { key: 'warn', es: 'ETA revisado · viaje rehecho', en: 'ETA revised · trip rebuilt' },
@@ -94,12 +94,12 @@
   var INVOICES = [
     {
       ref: 'F-2026-0184', fecha: '12/03/2026',
-      concepto: { es: 'Escala Algeciras · 1 viajero', en: 'Algeciras call · 1 traveller' },
+      concepto: { es: 'Escala en el Estrecho · 1 viajero', en: 'Port call in the Strait · 1 traveller' },
       estado: { key: 'warn', es: 'Pendiente', en: 'Outstanding' },
       lineas: [
         { k: { es: 'Vuelo', en: 'Flight' }, d: { es: 'HAM → AGP · ida y vuelta', en: 'HAM → AGP · return' }, v: '412,00' },
-        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Palmones · 2 noches', en: 'Palmones · 2 nights' }, v: '186,00' },
-        { k: { es: 'Traslado', en: 'Transfer' }, d: { es: 'AGP → Algeciras · ida y vuelta', en: 'AGP → Algeciras · return' }, v: '145,00' }
+        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Junto al puerto · 2 noches', en: 'Near the port · 2 nights' }, v: '186,00' },
+        { k: { es: 'Traslado', en: 'Transfer' }, d: { es: 'AGP → Puerto · ida y vuelta', en: 'AGP → Port · return' }, v: '145,00' }
       ],
       total: '743,00'
     },
@@ -117,11 +117,11 @@
     },
     {
       ref: 'F-2026-0122', fecha: '09/02/2026',
-      concepto: { es: 'Relevo de tripulación · Algeciras', en: 'Crew change · Algeciras' },
+      concepto: { es: 'Relevo de tripulación · Estrecho de Gibraltar', en: 'Crew change · Strait of Gibraltar' },
       estado: { key: 'ok', es: 'Pagada', en: 'Paid' },
       lineas: [
         { k: { es: 'Vuelos', en: 'Flights' }, d: { es: '2 tripulantes · ida y vuelta', en: '2 crew · return' }, v: '690,00' },
-        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Algeciras · 2 habitaciones × 1 noche', en: 'Algeciras · 2 rooms × 1 night' }, v: '165,00' },
+        { k: { es: 'Hotel', en: 'Hotel' }, d: { es: 'Junto al puerto · 2 habitaciones × 1 noche', en: 'Near the port · 2 rooms × 1 night' }, v: '165,00' },
         { k: { es: 'Traslados', en: 'Transfers' }, d: { es: 'Aeropuerto y puerto', en: 'Airport and port' }, v: '200,00' }
       ],
       total: '1.055,00'
@@ -343,7 +343,7 @@
     }
 
     if (kind === 'hotel') {
-      return sheet({ es: 'Hotel Ejemplo · Palmones', en: 'Example Hotel · Palmones' }, [
+      return sheet({ es: 'Hotel Ejemplo · junto al puerto', en: 'Example Hotel · near the port' }, [
         { k: { es: 'Huésped', en: 'Guest' }, v: esc(trip.viajero) },
         { k: { es: 'Entrada', en: 'Check-in' }, v: esc(trip.salida) + ' · 23:40' },
         { k: { es: 'Salida', en: 'Check-out' }, v: esc(trip.regreso) },
@@ -360,7 +360,7 @@
       { k: { es: 'Pasajero', en: 'Passenger' }, v: esc(trip.viajero) },
       { k: { es: 'Recogida', en: 'Pick-up' }, v: 'AGP T3 · Llegadas' },
       { k: { es: 'Fecha', en: 'Date' }, v: esc(trip.salida) + ' · 22:10' },
-      { k: { es: 'Destino', en: 'Drop-off' }, v: 'Hotel Ejemplo, Palmones' },
+      { k: { es: 'Destino', en: 'Drop-off' }, v: 'Hotel Ejemplo, junto al puerto' },
       { k: { es: 'Vehículo', en: 'Vehicle' },
         v: 'Berlina<small data-es="Espacio para instrumental facturado" data-en="Room for checked instrument cases">Espacio para instrumental facturado</small>' },
       { k: { es: 'Conductor', en: 'Driver' },

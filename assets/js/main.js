@@ -104,8 +104,8 @@
     setStatus('ok', 'Viaje confirmado', 'Trip confirmed');
     setCell('cellEta', '04:20 UTC', '04:20 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 21:55', 'HAM → AGP · 21:55', false);
-    setCell('cellHotel', 'Palmones · 1 noche', 'Palmones · 1 night', false);
-    setCell('cellTransfer', 'AGP → Algeciras · 02:00', 'AGP → Algeciras · 02:00', false);
+    setCell('cellHotel', 'Junto al puerto · 1 noche', 'Near the port · 1 night', false);
+    setCell('cellTransfer', 'AGP → Puerto · 02:00', 'AGP → Port · 02:00', false);
     setLog('Técnico de electrónica · 1 persona', 'Electronics engineer · 1 person');
   }
 
@@ -113,8 +113,8 @@
     setStatus('ok', 'Viaje rehecho · 00:12', 'Trip rebuilt · 00:12');
     setCell('cellEta', '<s>04:20</s> 18:40 UTC', '<s>04:20</s> 18:40 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 11:20', 'HAM → AGP · 11:20', false);
-    setCell('cellHotel', 'Palmones · 2 noches', 'Palmones · 2 nights', false);
-    setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', false);
+    setCell('cellHotel', 'Junto al puerto · 2 noches', 'Near the port · 2 nights', false);
+    setCell('cellTransfer', 'AGP → Puerto · 15:40', 'AGP → Port · 15:40', false);
     setLog('Rehecho sin cargo añadido', 'Rebuilt at no extra charge');
   }
 
@@ -138,12 +138,12 @@
     }, 4200));
 
     timers.push(setTimeout(function () {
-      setCell('cellHotel', 'Palmones · 2 noches', 'Palmones · 2 nights', true);
+      setCell('cellHotel', 'Junto al puerto · 2 noches', 'Near the port · 2 nights', true);
       setLog('Noche adicional confirmada', 'Extra night confirmed');
     }, 5300));
 
     timers.push(setTimeout(function () {
-      setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', true);
+      setCell('cellTransfer', 'AGP → Puerto · 15:40', 'AGP → Port · 15:40', true);
       setLog('Traslado reasignado', 'Transfer reassigned');
     }, 6300));
 
