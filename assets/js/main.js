@@ -107,7 +107,7 @@
     setCell('cellEta', '04:20 UTC', '04:20 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 21:55', 'HAM → AGP · 21:55', false);
     setCell('cellHotel', 'Junto al puerto · 1 noche', 'Near the port · 1 night', false);
-    setCell('cellTransfer', 'AGP → Puerto · 02:00', 'AGP → Port · 02:00', false);
+    setCell('cellTransfer', 'AGP → Algeciras · 02:00', 'AGP → Algeciras · 02:00', false);
     setLog('Técnico de electrónica · 1 persona', 'Electronics engineer · 1 person');
   }
 
@@ -116,7 +116,7 @@
     setCell('cellEta', '<s>04:20</s> 18:40 UTC', '<s>04:20</s> 18:40 UTC', false);
     setCell('cellFlight', 'HAM → AGP · 11:20', 'HAM → AGP · 11:20', false);
     setCell('cellHotel', 'Junto al puerto · 2 noches', 'Near the port · 2 nights', false);
-    setCell('cellTransfer', 'AGP → Puerto · 15:40', 'AGP → Port · 15:40', false);
+    setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', false);
     setLog('Rehecho sin cargo añadido', 'Rebuilt at no extra charge');
   }
 
@@ -145,12 +145,16 @@
     }, 5300));
 
     timers.push(setTimeout(function () {
-      setCell('cellTransfer', 'AGP → Puerto · 15:40', 'AGP → Port · 15:40', true);
+      setCell('cellTransfer', 'AGP → Algeciras · 15:40', 'AGP → Algeciras · 15:40', true);
       setLog('Traslado reasignado', 'Transfer reassigned');
     }, 6300));
 
     timers.push(setTimeout(frameEnd, 7500));
   }
+
+  /* Algunas vistas previas ejecutan JS pero nunca disparan el observer:
+     si en 1,5 s no ha dado señales, se enseña todo y la consola arranca. */
+  var ioAlive = false;
 
   if (console_) {
     var replay = document.getElementById('consoleReplay');
@@ -159,6 +163,7 @@
     if ('IntersectionObserver' in window) {
       var played = false;
       var obs = new IntersectionObserver(function (entries) {
+        ioAlive = true;
         entries.forEach(function (entry) {
           if (entry.isIntersecting && !played) { played = true; play(); }
         });
@@ -175,6 +180,7 @@
     reveals.forEach(function (el) { el.classList.add('is-in'); });
   } else {
     var revObs = new IntersectionObserver(function (entries) {
+      ioAlive = true;
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-in');
@@ -183,6 +189,11 @@
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
     reveals.forEach(function (el) { revObs.observe(el); });
+    setTimeout(function () {
+      if (ioAlive) { return; }
+      reveals.forEach(function (el) { el.classList.add('is-in'); });
+      if (console_ && !played) { played = true; play(); }
+    }, 1500);
   }
 
   /* ---------- 4. Formulario ----------

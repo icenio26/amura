@@ -321,6 +321,68 @@ body[data-page="area"] .header__area { border-color: var(--green); color: var(--
 }
 .console__replay:hover { color: var(--ink); border-color: var(--ink-3); }
 
+/* ---------- Consola sin JavaScript ----------
+   Donde los scripts no se ejecutan (vistas previas), la misma historia
+   del ETA que se mueve se cuenta con animación CSS en un ciclo de 12 s.
+   Con JS, main.js sustituye este contenido y manda él. */
+.cvs { display: inline-grid; }
+.cvs > .cv { grid-area: 1 / 1; }
+.js .cvs > .cv:not(:first-child) { display: none; }
+html:not(.js) .cvs > .cv { opacity: 0; animation-duration: 12s; animation-timing-function: linear; animation-iteration-count: infinite; }
+@keyframes cv-0-1 { 0.00%, 21.66% { opacity: 1; } 21.67%, 100% { opacity: 0; } }
+.cv--0-1 { animation-name: cv-0-1; }
+@keyframes cv-1-9 { 0%, 21.66% { opacity: 0; } 21.67%, 100.00% { opacity: 1; } }
+.cv--1-9 { animation-name: cv-1-9; }
+@keyframes cv-0-2 { 0.00%, 34.99% { opacity: 1; } 35.00%, 100% { opacity: 0; } }
+.cv--0-2 { animation-name: cv-0-2; }
+@keyframes cv-2-9 { 0%, 34.99% { opacity: 0; } 35.00%, 100.00% { opacity: 1; } }
+.cv--2-9 { animation-name: cv-2-9; }
+@keyframes cv-0-3 { 0.00%, 44.16% { opacity: 1; } 44.17%, 100% { opacity: 0; } }
+.cv--0-3 { animation-name: cv-0-3; }
+@keyframes cv-3-9 { 0%, 44.16% { opacity: 0; } 44.17%, 100.00% { opacity: 1; } }
+.cv--3-9 { animation-name: cv-3-9; }
+@keyframes cv-0-4 { 0.00%, 52.49% { opacity: 1; } 52.50%, 100% { opacity: 0; } }
+.cv--0-4 { animation-name: cv-0-4; }
+@keyframes cv-4-9 { 0%, 52.49% { opacity: 0; } 52.50%, 100.00% { opacity: 1; } }
+.cv--4-9 { animation-name: cv-4-9; }
+@keyframes cv-1-5 { 0%, 21.66% { opacity: 0; } 21.67%, 62.49% { opacity: 1; } 62.50%, 100% { opacity: 0; } }
+.cv--1-5 { animation-name: cv-1-5; }
+@keyframes cv-5-9 { 0%, 62.49% { opacity: 0; } 62.50%, 100.00% { opacity: 1; } }
+.cv--5-9 { animation-name: cv-5-9; }
+@keyframes cv-1-2 { 0%, 21.66% { opacity: 0; } 21.67%, 34.99% { opacity: 1; } 35.00%, 100% { opacity: 0; } }
+.cv--1-2 { animation-name: cv-1-2; }
+@keyframes cv-2-3 { 0%, 34.99% { opacity: 0; } 35.00%, 44.16% { opacity: 1; } 44.17%, 100% { opacity: 0; } }
+.cv--2-3 { animation-name: cv-2-3; }
+@keyframes cv-3-4 { 0%, 44.16% { opacity: 0; } 44.17%, 52.49% { opacity: 1; } 52.50%, 100% { opacity: 0; } }
+.cv--3-4 { animation-name: cv-3-4; }
+@keyframes cv-4-5 { 0%, 52.49% { opacity: 0; } 52.50%, 62.49% { opacity: 1; } 62.50%, 100% { opacity: 0; } }
+.cv--4-5 { animation-name: cv-4-5; }
+@keyframes cs-status {
+  0%, 21.66% { color: var(--green); background: var(--green-dim); }
+  21.67%, 62.49% { color: var(--amber); background: var(--amber-dim); }
+  62.50%, 100% { color: var(--green); background: var(--green-dim); }
+}
+@keyframes cs-dot {
+  0%, 21.66% { background: var(--green); box-shadow: 0 0 0 3px var(--green-dim); }
+  21.67%, 62.49% { background: var(--amber); box-shadow: 0 0 0 3px var(--amber-dim); }
+  62.50%, 100% { background: var(--green); box-shadow: 0 0 0 3px var(--green-dim); }
+}
+html:not(.js) #consoleStatus { animation: cs-status 12s linear infinite; }
+html:not(.js) #consoleDot { animation: cs-dot 12s linear infinite; }
+@keyframes cs-row-1 { 0%, 21.66% { color: var(--ink); } 21.67%, 62.49% { color: var(--amber); } 62.50%, 100% { color: var(--ink); } }
+html:not(.js) .console__row--s1 dd { animation: cs-row-1 12s linear infinite; }
+@keyframes cs-row-2 { 0%, 34.99% { color: var(--ink); } 35.00%, 62.49% { color: var(--amber); } 62.50%, 100% { color: var(--ink); } }
+html:not(.js) .console__row--s2 dd { animation: cs-row-2 12s linear infinite; }
+@keyframes cs-row-3 { 0%, 44.16% { color: var(--ink); } 44.17%, 62.49% { color: var(--amber); } 62.50%, 100% { color: var(--ink); } }
+html:not(.js) .console__row--s3 dd { animation: cs-row-3 12s linear infinite; }
+@keyframes cs-row-4 { 0%, 52.49% { color: var(--ink); } 52.50%, 62.49% { color: var(--amber); } 62.50%, 100% { color: var(--ink); } }
+html:not(.js) .console__row--s4 dd { animation: cs-row-4 12s linear infinite; }
+html:not(.js) #consoleReplay { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  html:not(.js) .cvs > .cv, html:not(.js) #consoleStatus, html:not(.js) #consoleDot, html:not(.js) .console__row dd { animation: none !important; }
+  html:not(.js) .cvs > .cv:last-child { opacity: 1; }
+}
+
 /* ---------- Tarjetas de escenario ---------- */
 .cards { display: grid; gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); }
 @media (min-width: 820px) { .cards--3 { grid-template-columns: repeat(3, 1fr); } }

@@ -71,7 +71,7 @@
 
         <p class="console__status" id="consoleStatus" data-state="ok" role="status">
           <span class="dot" id="consoleDot" aria-hidden="true"></span>
-          <span id="consoleStatusText" data-es="Viaje confirmado" data-en="Trip confirmed">Viaje confirmado</span>
+          <span id="consoleStatusText" data-es="Viaje confirmado" data-en="Trip confirmed"><span class="cvs"><span class="cv cv--0-1">Viaje confirmado</span><span class="cv cv--1-5">El buque retrasa · +14 h</span><span class="cv cv--5-9">Viaje rehecho · 00:12</span></span></span>
         </p>
 
         <dl class="console__rows">
@@ -79,26 +79,26 @@
             <dt data-es="Motivo" data-en="Purpose">Motivo</dt>
             <dd data-es="Embarque en Algeciras" data-en="Boarding in Algeciras">Embarque en Algeciras</dd>
           </div>
-          <div class="console__row" id="rowEta">
+          <div class="console__row console__row--s1" id="rowEta">
             <dt data-es="ETA buque" data-en="Vessel ETA">ETA buque</dt>
-            <dd id="cellEta">04:20 UTC</dd>
+            <dd id="cellEta"><span class="cvs"><span class="cv cv--0-1">04:20 UTC</span><span class="cv cv--1-9"><s>04:20</s> 18:40 UTC</span></span></dd>
           </div>
-          <div class="console__row" id="rowFlight">
+          <div class="console__row console__row--s2" id="rowFlight">
             <dt data-es="Vuelo" data-en="Flight">Vuelo</dt>
-            <dd id="cellFlight">HAM → AGP · 21:55</dd>
+            <dd id="cellFlight"><span class="cvs"><span class="cv cv--0-2">HAM → AGP · 21:55</span><span class="cv cv--2-9">HAM → AGP · 11:20</span></span></dd>
           </div>
-          <div class="console__row" id="rowHotel">
+          <div class="console__row console__row--s3" id="rowHotel">
             <dt data-es="Hotel" data-en="Hotel">Hotel</dt>
-            <dd id="cellHotel" data-es="Junto al puerto · 1 noche" data-en="Near the port · 1 night">Junto al puerto · 1 noche</dd>
+            <dd id="cellHotel" data-es="Junto al puerto · 1 noche" data-en="Near the port · 1 night"><span class="cvs"><span class="cv cv--0-3">Junto al puerto · 1 noche</span><span class="cv cv--3-9">Junto al puerto · 2 noches</span></span></dd>
           </div>
-          <div class="console__row" id="rowTransfer">
+          <div class="console__row console__row--s4" id="rowTransfer">
             <dt data-es="Traslado" data-en="Transfer">Traslado</dt>
-            <dd id="cellTransfer">AGP → Puerto · 02:00</dd>
+            <dd id="cellTransfer"><span class="cvs"><span class="cv cv--0-4">AGP → Algeciras · 02:00</span><span class="cv cv--4-9">AGP → Algeciras · 15:40</span></span></dd>
           </div>
         </dl>
 
         <div class="console__foot">
-          <span id="consoleLog" data-es="Técnico de electrónica · 1 persona" data-en="Electronics engineer · 1 person">Técnico de electrónica · 1 persona</span>
+          <span id="consoleLog" data-es="Técnico de electrónica · 1 persona" data-en="Electronics engineer · 1 person"><span class="cvs"><span class="cv cv--0-1">Técnico de electrónica · 1 persona</span><span class="cv cv--1-2">Nuevo ETA recibido</span><span class="cv cv--2-3">Vuelo reprogramado</span><span class="cv cv--3-4">Noche adicional confirmada</span><span class="cv cv--4-5">Traslado reasignado</span><span class="cv cv--5-9">Rehecho sin cargo añadido</span></span></span>
           <button type="button" class="console__replay" id="consoleReplay" data-es="Repetir" data-en="Replay">Repetir</button>
         </div>
       </div>
