@@ -49,8 +49,8 @@ la escala no se toca") y como **color de marca** —la luz verde vive en la pale
 
 **Valoración de "Amura-i":** el mejor equilibrio. Término náutico auténtico, sonoridad limpia en las dos
 lenguas de trabajo, fácil al teléfono y lo bastante abstracto para cubrir viajes *y* eventos. Su única
-debilidad —opaco para quien no navega— se resuelve con descriptor fijo: **Amura-i · Marine Travel &
-Events**. *Pilotina* es más evocador pero arrastra un riesgo caro: os leerían como operador de lanchas,
+debilidad —opaco para quien no navega— se resuelve con descriptor fijo: **Amura-i · Business & Crew
+Travel**. *Pilotina* es más evocador pero arrastra un riesgo caro: os leerían como operador de lanchas,
 categoría vecina y competidora. *Recalada* es bellísimo y muy español, pero se pronuncia mal fuera y
 estrecha la pata de eventos.
 

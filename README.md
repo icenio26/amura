@@ -1,4 +1,4 @@
-# Amura-i · Marine Travel & Events
+# Amura-i · Business & Crew Travel
 
 Web corporativa de una agencia de viajes de empresa especializada en el **sector marítimo**,
 desde el Estrecho de Gibraltar al resto de Europa y del mundo.
@@ -47,7 +47,7 @@ posible nombre del protocolo de confirmación 24/7.
 
 La marca es **Amura-i**: *amura* es el costado de proa, la parte del buque que rompe primero el
 agua, y la *i* final se dibuja en el logo con un trazo vertical bajo el punto verde. Lleva
-descriptor fijo *Marine Travel & Events* y tagline **«A bordo a tiempo» / «On board, on time»**.
+descriptor fijo *Business & Crew Travel* bajo el nombre y lema **«On board, on time»** (en inglés también en la versión española).
 Cambiar el nombre es una búsqueda y reemplazo en `src/` seguida de `python3 tools/build.py`; el
 sistema visual no depende de él.
 

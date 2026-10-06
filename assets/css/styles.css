@@ -1,5 +1,5 @@
 /* =============================================================
-   AMURA · Marine Travel & Events
+   AMURA-I · Business & Crew Travel
    Sistema visual: "noche de terminal".
    Dark-first. El color no decora: señaliza (verde estribor,
    ámbar sodio de muelle, rojo babor).
@@ -199,9 +199,14 @@ img, svg { max-width: 100%; }
 
 .brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; margin-right: auto; }
 .brand__mark { width: 26px; height: 26px; flex: 0 0 auto; }
+.brand__text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand__name {
   font-family: var(--font-display); font-weight: 700;
   font-size: 1.06rem; letter-spacing: .21em; text-transform: uppercase;
+}
+.brand__desc {
+  font-family: var(--font-mono); font-size: .58rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-3); margin-top: .2rem; white-space: nowrap;
 }
 
 .nav { display: none; gap: 1.35rem; }
