@@ -484,6 +484,7 @@ html:not(.js) #consoleReplay { display: none; }
   content: ""; position: absolute; left: 0; top: .55em;
   width: 5px; height: 5px; background: var(--green); border-radius: 50%;
 }
+.service--amber li::before { background: var(--amber); }
 
 .caps { display: grid; gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); margin-top: 1px; }
 @media (min-width: 620px) { .caps { grid-template-columns: repeat(2, 1fr); } }
