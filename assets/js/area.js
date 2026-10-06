@@ -352,7 +352,7 @@
         { k: { es: 'Régimen', en: 'Board' }, v: 'Alojamiento y desayuno' },
         { k: { es: 'Reserva', en: 'Booking' }, v: 'HB-449120' },
         { k: { es: 'Facturación', en: 'Billing' },
-          v: 'Amura<small data-es="A cargo de la agencia: no pagas nada en recepción" data-en="Charged to the agency: nothing to pay at the desk">A cargo de la agencia: no pagas nada en recepción</small>' }
+          v: 'Amura-i<small data-es="A cargo de la agencia: no pagas nada en recepción" data-en="Charged to the agency: nothing to pay at the desk">A cargo de la agencia: no pagas nada en recepción</small>' }
       ]);
     }
 
