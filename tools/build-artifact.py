@@ -79,6 +79,10 @@ def main():
         )
 
     parts = [
+        "<!doctype html>",
+        '<html lang="es" data-lang="es">',
+        '<meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
         "<title>%s</title>" % title,
         '<link rel="preconnect" href="https://fonts.googleapis.com">',
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
@@ -90,6 +94,7 @@ def main():
         "<script>\n%s\n</script>" % read("assets/js/main.js"),
         "<script>\n%s\n</script>" % read("assets/js/area.js"),
         "<script>%s</script>" % ROUTER,
+        "</html>",
     ]
 
     out.write_text("\n".join(parts) + "\n", encoding="utf-8")
