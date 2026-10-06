@@ -265,7 +265,6 @@ body[data-page="area"] .header__area { border-color: var(--green); color: var(--
 .hero h1 em { font-style: normal; color: var(--amber); }
 .hero__lead { margin-bottom: 1.9rem; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: .9rem; }
-.hero__note { font-size: .875rem; color: var(--ink-3); }
 
 .stats { display: grid; grid-template-columns: 1fr; gap: 1px; margin-top: 2.25rem; background: var(--line-soft); border: 1px solid var(--line-soft); }
 .stats > div { background: var(--ground); padding: .95rem 1.05rem; }
@@ -567,9 +566,11 @@ body[data-page="area"] .header__area { border-color: var(--green); color: var(--
 }
 .dockbar a.is-primary { background: var(--green); color: var(--on-signal); }
 
-/* ---------- Revelado al hacer scroll ---------- */
-.reveal { opacity: 0; transform: translateY(8px); transition: opacity .28s ease, transform .28s ease; }
-.reveal.is-in { opacity: 1; transform: none; }
+/* ---------- Revelado al hacer scroll ----------
+   Sólo se esconde si el JS ha arrancado (clase .js en <html>): sin scripts,
+   el contenido se ve entero. */
+.js .reveal { opacity: 0; transform: translateY(8px); transition: opacity .28s ease, transform .28s ease; }
+.js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
